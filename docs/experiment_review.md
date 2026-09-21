@@ -52,4 +52,4 @@ This project uses synthetically generated customer-level data designed to simula
 
 Annualization values twelve new acquisition cohorts over twelve policy months each; it is not realized revenue or first-year recognized contribution. Financial intervals cover randomized-unit sampling only. Traffic, policy valuation, retention and cost assumptions remain uncertain. Referral rewards apply to all qualifying conversions. No real-company outcomes are claimed.
 
-See [the experiment methodology](experimentation.md) and [machine-readable decision records](experiment_results.json). The optimizer has not been started.
+See [the experiment methodology](experimentation.md) and [machine-readable decision records](experiment_results.json).

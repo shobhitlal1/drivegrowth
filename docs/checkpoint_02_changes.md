@@ -1,6 +1,6 @@
-# Checkpoint 02: Experiments
+# Experiment implementation notes
 
-The existing visual language is preserved. This checkpoint adds the experiment decision workflow and stops before the growth optimizer.
+The existing visual language is preserved. The experiment decision workflow complements the project's acquisition economics analysis.
 
 ## Application and shared presentation
 

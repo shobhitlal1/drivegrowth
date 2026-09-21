@@ -7,7 +7,7 @@ Seeded numpy generator → 7 Parquet source tables → DuckDB transaction
                                                    ↓
                              Parameterized SQL → Python metric contract
                                                    ↓
-                               Streamlit + Plotly / CSV / checkpoint memo
+                               Streamlit + Plotly / CSV / executive memo
 ```
 
 `src/generate_data.py` creates vectorized, linked source records. `src/database.py` builds in a staging file and atomically replaces the existing database only after success. `sql/build_marts.sql` aggregates ledger facts before joining, preventing duplicate customer counts and inflated revenue. The ten numbered SQL files are executable analytical case studies.
@@ -18,10 +18,10 @@ Seeded numpy generator → 7 Parquet source tables → DuckDB transaction
 
 `src/validate_data.py` produces a machine-readable validation report. Pytest builds its own small seeded dataset, validates financial and relational invariants, compares SQL/Python LTV, exercises filter semantics, and uses Streamlit AppTest for render and empty-state checks. When the full database exists, application tests run against it.
 
-Checkpoint 02 adds `views/experiments.py` alongside the preserved `views/overview.py`. `app.py` owns routing, while `src/ui.py` preserves shared typography, number formatting and visual helpers.
+`views/experiments.py` provides the experiment workspace alongside `views/overview.py`. `app.py` owns routing, while `src/ui.py` preserves shared typography, number formatting and visual helpers.
 
 `src/experiment_designs.py` specifies designs before outcomes. `src/generate_experiments.py` builds independent trial cohorts using pre-test historical profiles and valuation assumptions. Their source fingerprints are checked during the transactional DuckDB build. `sql/experiment_marts.sql` and `sql/11_experiment_analysis.sql` preserve intention-to-treat denominators and expose an auditable financial bridge.
 
 `src/experimentation.py` contains statistical primitives, bootstrap intervals, guardrail noninferiority, sample planning, heterogeneity and the experiment-agnostic decision policy. `src/experiment_analysis.py` binds the database registry to those calculations, quality checks and downloadable decision records. `src/experiment_report.py` produces the executive experiment memo. The sidebar never applies historical operating-book filters to the randomized comparison; segment analysis is explicitly exploratory.
 
-Optimization, carrier strategy, predictive modeling and forecasting remain unimplemented. The next work begins only after experiment review.
+The project's scope focuses on acquisition economics and experimentation. Constrained marketing allocation, carrier-partnership optimization, and prospective forecasting are potential extensions outside this scope.

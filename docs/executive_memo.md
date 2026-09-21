@@ -1,6 +1,6 @@
-# Executive checkpoint memo
+# Executive memo
 
-**Reporting period:** May–July 2026. **Snapshot:** August 31, 2026. **Scope:** operating overview and experiment checkpoint.
+**Reporting period:** May–July 2026. **Snapshot:** August 31, 2026. **Scope:** acquisition economics and experimentation.
 
 This project uses synthetically generated customer-level data designed to simulate realistic insurance marketplace behavior. It is not affiliated with or based on proprietary data from any insurance company.
 
@@ -30,6 +30,6 @@ Three separate synthetic trials now have intention-to-treat analysis, confidence
 
 The 24-month contribution scenario uses constant survival fitted to the full snapshot and an 8% annual discount. It is not a validated predictive model or a historical backtest. Filtered CAC allocates daily channel costs proportionally to visitors. Channel averages do not measure capacity or diminishing returns. Commission revenue and contribution use the entire active book, while customer and policy acquisition use signup cohorts. Causal claims and budget changes require further work.
 
-## Next actions
+## Potential extensions
 
-Review the Experiments workspace's evidence, financial tradeoffs and decision rules. The optimizer has not been started. After experiment review, prioritize constrained growth optimization, carrier strategy and executive decisions. Preserve explicit metric definitions and synthetic-data labeling throughout.
+Future iterations could incorporate constrained marketing allocation, carrier-partnership optimization, and prospective forecasting. These are intentionally outside the current project's scope, which focuses on acquisition economics and experimentation.
