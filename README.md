@@ -113,12 +113,12 @@ See [architecture details](docs/architecture.md).
 
 Conversion lift, zero/sparse denominators, confidence intervals, p-values, unequal variance, bootstrap reproducibility, incentive accounting, financial sensitivity, decision gates, guardrail noninferiority, heterogeneous effects, source-data reproducibility, SQL reconciliation, sample-ratio mismatch, immature outcomes, navigation, scenario controls and existing overview behavior.
 
-The latest checkpoint passes **58 automated tests** plus **22 historical data checks** and **21 experiment quality checks**. Run the commands above to reproduce validation.
+The project passes **58 automated tests** plus **22 historical data checks** and **21 experiment quality checks**. Run the commands above to reproduce validation.
 
-## Limits and next work
+## Limitations / Potential Extensions
 
 All data and trial effects are synthetic. Modeled policy value is not experimentally observed long-term retention. Annualized impact values twelve monthly acquisition cohorts over twelve policy months each; it is **not realized revenue or first-year recognized contribution**. Its interval covers sampling, not uncertainty in traffic, retention or implementation costs. Referral tests assume one opportunity per member with no network spillovers. Segment findings are exploratory.
 
 The historical revenue chart aggregates a growing active book and remains smoother than the experiment enrollment and cumulative-result charts. The operating snapshot has not been cosmetically altered to manufacture volatility.
 
-**Checkpoint 02 stops at Experiments.** The marketing/growth optimizer has not been started. The proposed next sequence, after review, is Growth Optimizer → Carrier Strategy → Executive Decisions → further SQL/README polish. Forecasting and additional segmentation are deferred.
+**Potential extensions:** Future iterations could incorporate constrained marketing allocation, carrier-partnership optimization, and prospective forecasting. These are intentionally outside the current project's scope, which focuses on acquisition economics and experimentation.
