@@ -1,0 +1,102 @@
+{
+  "all_passed": true,
+  "checks": {
+    "unique_customers": {
+      "passed": true,
+      "violations": 0
+    },
+    "unique_customer_mart": {
+      "passed": true,
+      "violations": 0
+    },
+    "unique_policies": {
+      "passed": true,
+      "violations": 0
+    },
+    "unique_monthly_value": {
+      "passed": true,
+      "violations": 0
+    },
+    "policy_foreign_keys": {
+      "passed": true,
+      "violations": 0
+    },
+    "event_foreign_keys": {
+      "passed": true,
+      "violations": 0
+    },
+    "quote_foreign_keys": {
+      "passed": true,
+      "violations": 0
+    },
+    "carrier_foreign_keys": {
+      "passed": true,
+      "violations": 0
+    },
+    "ledger_foreign_keys": {
+      "passed": true,
+      "violations": 0
+    },
+    "event_censoring": {
+      "passed": true,
+      "violations": 0
+    },
+    "event_chronology": {
+      "passed": true,
+      "violations": 0
+    },
+    "nested_funnel": {
+      "passed": true,
+      "violations": 0
+    },
+    "nonnegative_spend": {
+      "passed": true,
+      "violations": 0
+    },
+    "complete_spend_allocation": {
+      "passed": true,
+      "violations": 0
+    },
+    "ledger_margin_identity": {
+      "passed": true,
+      "violations": 0
+    },
+    "renewals_are_mature": {
+      "passed": true,
+      "violations": 0
+    },
+    "cancellations_after_start": {
+      "passed": true,
+      "violations": 0
+    },
+    "no_ledger_after_cancellation": {
+      "passed": true,
+      "violations": 0
+    },
+    "spend_reconciles_to_source": {
+      "passed": true,
+      "difference": 8.381903171539307e-08
+    },
+    "policies_reconcile_to_source": {
+      "passed": true,
+      "difference": 0
+    },
+    "simulated_mobile_friction": {
+      "passed": true,
+      "desktop": 0.7742374041127957,
+      "mobile": 0.6335482139187256
+    },
+    "simulated_retention_value": {
+      "passed": true,
+      "referral_ltv": 347.14291811617613,
+      "social_ltv": 209.6566544919198
+    }
+  },
+  "row_counts": {
+    "customers": 500000,
+    "quotes": 349495,
+    "policies": 104602,
+    "funnel_events": 1438755,
+    "monthly_customer_value": 1040226
+  }
+}
