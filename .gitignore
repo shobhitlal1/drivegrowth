@@ -1,0 +1,46 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.py[cod]
+.coverage*
+htmlcov/
+
+# Generated data and local databases (rebuild using the README)
+data/raw/
+data/processed/
+*.parquet
+*.duckdb*
+*.db
+*.sqlite*
+
+# Credentials and private local configuration
+.env
+.env.*
+*.env
+secrets.toml
+secrets/
+credentials.json
+*credentials*.json
+*.pem
+*.key
+*.p12
+*.pfx
+.aws/
+.ssh/
+
+# Build artifacts, exports and temporary files
+build/
+dist/
+*.egg-info/
+*.zip
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+.idea/
+.vscode/
